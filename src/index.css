@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F5F3ED;
+  color: #202522;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Subtle Scientific / Cartographic Grid Patterns */
+.carto-grid-subtle {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(113, 135, 122, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(113, 135, 122, 0.08) 1px, transparent 1px);
+}
+
+.carto-crosshair-pattern {
+  background-size: 48px 48px;
+  background-image: 
+    radial-gradient(circle, rgba(23, 63, 53, 0.15) 1px, transparent 1px);
+}
+
+/* Clean Muted Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ECE9E1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CFCABF;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8A9E92;
+}
